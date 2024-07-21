@@ -1,4 +1,4 @@
-# Chromego_merge
+hy2.yuwell.dynv6.net# Chromego_merge
 
 不仅限于 ChromeGo 工具包的免费订阅合集
 
@@ -12,19 +12,19 @@
 ### Clash Meta 客户端订阅
 
 ```
-https://chromego-sub.netlify.app/sub/merged_proxies_new.yaml
+https://hy2.yuwell.dynv6.net/sub/merged_proxies_new.yaml
 ```
 
 ### 通用 base64 订阅
 
 ```
-https://chromego-sub.netlify.app/sub/base64.txt
+https://hy2.yuwell.dynv6.net/sub/base64.txt
 ```
 
 ### sing-box 订阅（适用于 1.8.0 以上）
 
 ```
-https://chromego-sub.netlify.app/sub/sing-box.json
+https://hy2.yuwell.dynv6.net/sub/sing-box.json
 ```
 
 
