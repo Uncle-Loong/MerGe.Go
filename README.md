@@ -1,4 +1,4 @@
-hy2.yuwell.dynv6.net# Chromego_merge
+# MerGe.Go
 
 不仅限于 ChromeGo 工具包的免费订阅合集
 
@@ -32,31 +32,31 @@ https://hy2.yuwell.dynv6.net/sub/sing-box.json
 
 ### Windows
 
-- [clash verge](https://github.com/clash-verge-rev/clash-verge-rev) 
-- [clash nyanpasu]( https://github.com/LibNyanpasu/clash-nyanpasu)
-- [nekoray](https://github.com/MatsuriDayo/nekoray)
+- [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev) 
+- [Clash nyanpasu]( https://github.com/LibNyanpasu/clash-nyanpasu)
+- [Nekoray](https://github.com/MatsuriDayo/nekoray)
 
 ### Android
 
-- [nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
-- [clashmeta for android](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
+- [Nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+- [ClashMeta for android](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
 
 ### ios
 
-- sing-box
-- shadowrocket
+- Sing-box
+- Shadowrocket
 
 ### macos
 
-- [clashx.meta](https://github.com/MetaCubeX/ClashX.Meta/releases)
-- [clash verge](https://github.com/clash-verge-rev/clash-verge-rev) 
+- [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases)
+- [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev) 
 - shadowrocket
 
 ## 致谢
 
 - [Alvin9999](https://github.com/Alvin9999/pac2/tree/master)
-- [sing-box-subscribe](https://github.com/Toperlock/sing-box-subscribe)
+- [Sing-box-subscribe](https://github.com/Toperlock/sing-box-subscribe)
 
 区域设置代码截取自:
 
-- [chromegopacs](https://github.com/markbang/chromegopacs)
+- [Chromegopacs](https://github.com/markbang/chromegopacs)
