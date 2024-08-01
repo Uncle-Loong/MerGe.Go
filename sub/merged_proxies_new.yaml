@@ -3030,7 +3030,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: China_Shenzhen_vmess_1145
+  name: China_Guangzhou_vmess_1145
   network: ws
   port: 46001
   server: mmhk01.micloud.buzz
@@ -3112,7 +3112,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_1153
+  name: None_None_vmess_1153
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
@@ -3193,7 +3193,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: China_Guangzhou_vmess_1159
+  name: China_Shenzhen_vmess_1159
   network: ws
   port: '46001'
   server: mmhk01.micloud.buzz
@@ -3305,9 +3305,9 @@ proxies:
   ws-opts:
     headers:
       Host: www.zitian.cn
-- name: United States_None_hy_0
+- name: United States_Los Angeles_hy_0
   type: hysteria
-  server: 166.1.221.169
+  server: 91.149.239.23
   port: 11223
   ports: 11223
   auth_str: dongtaiwang.com
@@ -3601,7 +3601,7 @@ proxy-groups:
   - United States_None_vmess_1142
   - Hong Kong_Central_trojan_1143
   - China_None_vmess_1144
-  - China_Shenzhen_vmess_1145
+  - China_Guangzhou_vmess_1145
   - China_None_trojan_1146
   - China_None_vmess_1147
   - China_Guangzhou_vmess_1148
@@ -3609,13 +3609,13 @@ proxy-groups:
   - Hong Kong_Central_trojan_1150
   - China_None_trojan_1151
   - China_Shenzhen_vmess_1152
-  - United States_None_vmess_1153
+  - None_None_vmess_1153
   - None_None_vmess_1154
   - China_None_trojan_1155
   - None_None_vmess_1156
   - None_None_vmess_1157
   - China_None_vmess_1158
-  - China_Guangzhou_vmess_1159
+  - China_Shenzhen_vmess_1159
   - China_None_vmess_1160
   - China_Guangzhou_vmess_1161
   - China_None_vmess_1162
@@ -3625,7 +3625,7 @@ proxy-groups:
   - Singapore_None_trojan_1166
   - China_None_vmess_1167
   - China_None_trojan_1168
-  - United States_None_hy_0
+  - United States_Los Angeles_hy_0
   - United States_None_hy_1
   - United States_None_hy_2
   - United States_None_hy_3
@@ -3841,7 +3841,7 @@ proxy-groups:
   - United States_None_vmess_1142
   - Hong Kong_Central_trojan_1143
   - China_None_vmess_1144
-  - China_Shenzhen_vmess_1145
+  - China_Guangzhou_vmess_1145
   - China_None_trojan_1146
   - China_None_vmess_1147
   - China_Guangzhou_vmess_1148
@@ -3849,13 +3849,13 @@ proxy-groups:
   - Hong Kong_Central_trojan_1150
   - China_None_trojan_1151
   - China_Shenzhen_vmess_1152
-  - United States_None_vmess_1153
+  - None_None_vmess_1153
   - None_None_vmess_1154
   - China_None_trojan_1155
   - None_None_vmess_1156
   - None_None_vmess_1157
   - China_None_vmess_1158
-  - China_Guangzhou_vmess_1159
+  - China_Shenzhen_vmess_1159
   - China_None_vmess_1160
   - China_Guangzhou_vmess_1161
   - China_None_vmess_1162
@@ -3865,7 +3865,7 @@ proxy-groups:
   - Singapore_None_trojan_1166
   - China_None_vmess_1167
   - China_None_trojan_1168
-  - United States_None_hy_0
+  - United States_Los Angeles_hy_0
   - United States_None_hy_1
   - United States_None_hy_2
   - United States_None_hy_3
