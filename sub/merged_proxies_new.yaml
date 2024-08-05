@@ -1450,7 +1450,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: None_None_vmess_096
+- name: United States_None_vmess_096
   type: vmess
   server: japan.com
   port: 2086
@@ -3052,7 +3052,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: United States_San Francisco_vmess_1147
+  name: None_None_vmess_1147
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -3442,7 +3442,7 @@ proxy-groups:
   - Canada_Ottawa_vmess_093
   - None_None_vmess_094
   - United States_None_vmess_095
-  - None_None_vmess_096
+  - United States_None_vmess_096
   - None_None_vmess_097
   - None_None_vmess_098
   - None_None_vmess_099
@@ -3551,7 +3551,7 @@ proxy-groups:
   - China_None_vmess_1144
   - United States_None_vmess_1145
   - China_None_trojan_1146
-  - United States_San Francisco_vmess_1147
+  - None_None_vmess_1147
   - None_None_vmess_1148
   - China_None_trojan_1149
   - United States_None_vmess_1150
@@ -3676,7 +3676,7 @@ proxy-groups:
   - Canada_Ottawa_vmess_093
   - None_None_vmess_094
   - United States_None_vmess_095
-  - None_None_vmess_096
+  - United States_None_vmess_096
   - None_None_vmess_097
   - None_None_vmess_098
   - None_None_vmess_099
@@ -3785,7 +3785,7 @@ proxy-groups:
   - China_None_vmess_1144
   - United States_None_vmess_1145
   - China_None_trojan_1146
-  - United States_San Francisco_vmess_1147
+  - None_None_vmess_1147
   - None_None_vmess_1148
   - China_None_trojan_1149
   - United States_None_vmess_1150
