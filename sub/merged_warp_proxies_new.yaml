@@ -25,6 +25,22 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: WARP
+  type: wireguard
+  server: 162.159.192.1
+  port: 2408
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
+  private-key: wIC19yRRSJkhVJcE09Qo9bE3P3PIwS3yyqyUnjwNO34=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  udp: true
+  ip-version: ipv6-prefer
+  reserved: XiBe
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
+  dialer-proxy: WARP前置节点
 - name: None vmess 01
   type: vmess
   server: 104.19.38.8
@@ -1359,98 +1375,17 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
+  - WARP
   - 自动选择
+  - 负载均衡
+  - 手动选择
   - DIRECT
-  - None vmess 01
-  - None vmess 02
-  - Canada vmess 03
-  - None vmess 04
-  - United States vmess 05
-  - United States vmess 06
-  - None vmess 07
-  - United States vmess 08
-  - United States vmess 09
-  - United States vmess 010
-  - None vmess 011
-  - None vmess 012
-  - None vmess 013
-  - None vmess 014
-  - None vmess 015
-  - None vmess 016
-  - None vmess 017
-  - None vmess 018
-  - None vmess 019
-  - None vmess 020
-  - None vmess 021
-  - None vmess 022
-  - None vmess 023
-  - None vmess 024
-  - None vmess 025
-  - None vmess 026
-  - None vmess 027
-  - None vmess 028
-  - None vmess 029
-  - None vmess 030
-  - United States vmess 031
-  - None vmess 11
-  - None vmess 12
-  - Canada vmess 13
-  - None vmess 14
-  - United States vmess 15
-  - United States vmess 16
-  - None vmess 17
-  - United States vmess 18
-  - United States vmess 19
-  - United States vmess 110
-  - None vmess 111
-  - None vmess 112
-  - None vmess 113
-  - None vmess 114
-  - None vmess 115
-  - None vmess 116
-  - None vmess 117
-  - None vmess 118
-  - None vmess 119
-  - None vmess 120
-  - None vmess 121
-  - None vmess 122
-  - None vmess 123
-  - None vmess 124
-  - None vmess 125
-  - None vmess 126
-  - None vmess 127
-  - None vmess 128
-  - None vmess 129
-  - None vmess 130
-  - United States vmess 131
-  - None vmess 21
-  - Canada vmess 22
-  - None vmess 23
-  - None vmess 24
-  - None vmess 31
-  - Canada vmess 32
-  - None vmess 33
-  - None vmess 34
-  - None vmess 41
-  - Canada vmess 42
-  - None vmess 43
-  - None vmess 44
-  - United States vless 51
-  - United States tuic 61
-  - None vmess 71
-  - Canada vmess 72
-  - None vmess 73
-  - None vmess 74
-  - United States vless 81
-  - United States tuic 91
-  - France hysteria 0
-  - France hysteria 1
-  - France hysteria 2
-  - France hysteria 3
-  - United States hysteria2 0
-  - United States hysteria2 1
-  - United States hysteria2 2
-  - United States hysteria2 3
+- name: WARP前置节点
+  type: select
+  proxies:
+  - 自动选择
+  - 负载均衡
+  - 手动选择
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1547,6 +1482,195 @@ proxy-groups:
   - United States hysteria2 1
   - United States hysteria2 2
   - United States hysteria2 3
+- name: 手动选择
+  type: select
+  proxies:
+  - None vmess 01
+  - None vmess 02
+  - Canada vmess 03
+  - None vmess 04
+  - United States vmess 05
+  - United States vmess 06
+  - None vmess 07
+  - United States vmess 08
+  - United States vmess 09
+  - United States vmess 010
+  - None vmess 011
+  - None vmess 012
+  - None vmess 013
+  - None vmess 014
+  - None vmess 015
+  - None vmess 016
+  - None vmess 017
+  - None vmess 018
+  - None vmess 019
+  - None vmess 020
+  - None vmess 021
+  - None vmess 022
+  - None vmess 023
+  - None vmess 024
+  - None vmess 025
+  - None vmess 026
+  - None vmess 027
+  - None vmess 028
+  - None vmess 029
+  - None vmess 030
+  - United States vmess 031
+  - None vmess 11
+  - None vmess 12
+  - Canada vmess 13
+  - None vmess 14
+  - United States vmess 15
+  - United States vmess 16
+  - None vmess 17
+  - United States vmess 18
+  - United States vmess 19
+  - United States vmess 110
+  - None vmess 111
+  - None vmess 112
+  - None vmess 113
+  - None vmess 114
+  - None vmess 115
+  - None vmess 116
+  - None vmess 117
+  - None vmess 118
+  - None vmess 119
+  - None vmess 120
+  - None vmess 121
+  - None vmess 122
+  - None vmess 123
+  - None vmess 124
+  - None vmess 125
+  - None vmess 126
+  - None vmess 127
+  - None vmess 128
+  - None vmess 129
+  - None vmess 130
+  - United States vmess 131
+  - None vmess 21
+  - Canada vmess 22
+  - None vmess 23
+  - None vmess 24
+  - None vmess 31
+  - Canada vmess 32
+  - None vmess 33
+  - None vmess 34
+  - None vmess 41
+  - Canada vmess 42
+  - None vmess 43
+  - None vmess 44
+  - United States vless 51
+  - United States tuic 61
+  - None vmess 71
+  - Canada vmess 72
+  - None vmess 73
+  - None vmess 74
+  - United States vless 81
+  - United States tuic 91
+  - France hysteria 0
+  - France hysteria 1
+  - France hysteria 2
+  - France hysteria 3
+  - United States hysteria2 0
+  - United States hysteria2 1
+  - United States hysteria2 2
+  - United States hysteria2 3
+- name: 负载均衡
+  type: load-balance
+  proxies:
+  - None vmess 01
+  - None vmess 02
+  - Canada vmess 03
+  - None vmess 04
+  - United States vmess 05
+  - United States vmess 06
+  - None vmess 07
+  - United States vmess 08
+  - United States vmess 09
+  - United States vmess 010
+  - None vmess 011
+  - None vmess 012
+  - None vmess 013
+  - None vmess 014
+  - None vmess 015
+  - None vmess 016
+  - None vmess 017
+  - None vmess 018
+  - None vmess 019
+  - None vmess 020
+  - None vmess 021
+  - None vmess 022
+  - None vmess 023
+  - None vmess 024
+  - None vmess 025
+  - None vmess 026
+  - None vmess 027
+  - None vmess 028
+  - None vmess 029
+  - None vmess 030
+  - United States vmess 031
+  - None vmess 11
+  - None vmess 12
+  - Canada vmess 13
+  - None vmess 14
+  - United States vmess 15
+  - United States vmess 16
+  - None vmess 17
+  - United States vmess 18
+  - United States vmess 19
+  - United States vmess 110
+  - None vmess 111
+  - None vmess 112
+  - None vmess 113
+  - None vmess 114
+  - None vmess 115
+  - None vmess 116
+  - None vmess 117
+  - None vmess 118
+  - None vmess 119
+  - None vmess 120
+  - None vmess 121
+  - None vmess 122
+  - None vmess 123
+  - None vmess 124
+  - None vmess 125
+  - None vmess 126
+  - None vmess 127
+  - None vmess 128
+  - None vmess 129
+  - None vmess 130
+  - United States vmess 131
+  - None vmess 21
+  - Canada vmess 22
+  - None vmess 23
+  - None vmess 24
+  - None vmess 31
+  - Canada vmess 32
+  - None vmess 33
+  - None vmess 34
+  - None vmess 41
+  - Canada vmess 42
+  - None vmess 43
+  - None vmess 44
+  - United States vless 51
+  - United States tuic 61
+  - None vmess 71
+  - Canada vmess 72
+  - None vmess 73
+  - None vmess 74
+  - United States vless 81
+  - United States tuic 91
+  - France hysteria 0
+  - France hysteria 1
+  - France hysteria 2
+  - France hysteria 3
+  - United States hysteria2 0
+  - United States hysteria2 1
+  - United States hysteria2 2
+  - United States hysteria2 3
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
