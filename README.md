@@ -24,7 +24,7 @@ https://hy2.yuwell.dynv6.net/sub/shadowrocket_base64.txt
 ### sing-box 订阅（适用于 1.8.0 以上）
 
 ```
-https://hy2.yuwell.dynv6.net/sub/sing-box.json
+https://hy2.yuwell.dynv6.net/sub/sb.json
 ```
 
 
