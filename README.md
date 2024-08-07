@@ -18,7 +18,7 @@ https://hy2.yuwell.dynv6.net/sub/merged_proxies_new.yaml
 ### 通用 base64 订阅
 
 ```
-https://hy2.yuwell.dynv6.net/sub/shadowrocket_base64.tx
+https://hy2.yuwell.dynv6.net/sub/shadowrocket_base64.txt
 ```
 
 ### sing-box 订阅（适用于 1.8.0 以上）
